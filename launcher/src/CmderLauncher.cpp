@@ -147,7 +147,9 @@ void StartCmder(std::wstring path, bool is_single_mode)
 	}
 	else
 	{
-		SetEnvironmentVariable(L"CMDER_START", GetEnvironmentVariable(L"USER_PROFILE"));
+		static char buff[MAX_PATH];
+		GetEnvironmentVariable(L"USER_PROFILE", buff, MAX_PATH);
+		SetEnvironmentVariable(L"CMDER_START", buff);
 	}
 
 	STARTUPINFO si = { 0 };
