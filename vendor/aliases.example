@@ -5,4 +5,16 @@ pwd=cd
 clear=cls
 history=cat %CMDER_ROOT%\config\.history
 unalias=alias /d $1
+<<<<<<< b47d04f75cbc5151d40f368b94c4dd9cb76b382c:vendor/aliases.example
 vi=vim $*
+||||||| merged common ancestors
+=======
+dimscreen=start "DimScreen" "C:\Utilities\DimScreen\DimScreenMod.exe"
+kill_maya=taskkill /f /im maya.exe
+kill_3dsmax=taskkill /f /im 3dsmax.exe
+kill_pidgin=taskkill /f /im pidgin.exe
+kill_python=taskkill /f im python.exe
+kill_firefox=taskkill /f /im firefox*
+kill_chrome=taskkill /f /im chrome*
+kill_dimscreen=taskkill /f /im DimScreenMod*
+>>>>>>> adding custom config for cmder:config/aliases
